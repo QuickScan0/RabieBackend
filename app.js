@@ -38,7 +38,7 @@ app.post("/article", async(req,res)=>{
     const Niveau = req.body.Niveau;
     const Email = req.body.Email;
     const Numero = req.body.Numero;
-    const Ville=red.body.Ville;
+    const Ville=req.body.Ville;
  
     newArticle.StudentLastName=StudentLastName;
     newArticle.StudentFirstName=StudentFirstName;
