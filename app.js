@@ -38,12 +38,14 @@ app.post("/article", async(req,res)=>{
     const Niveau = req.body.Niveau;
     const Email = req.body.Email;
     const Numero = req.body.Numero;
+    const Ville=red.body.Ville;
  
     newArticle.StudentLastName=StudentLastName;
     newArticle.StudentFirstName=StudentFirstName;
     newArticle.Niveau=Niveau;
     newArticle.Email=Email;
     newArticle.Numero=Numero;
+    newArticle.Ville=Ville;
     await newArticle.save()
     res.json(newArticle)
 });
