@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.post("/articles", async(req,res)=>{
+app.post("/article", async(req,res)=>{
     const newArticle = new Article();
     const StudentLastName = req.body.StudentLastName;
     const StudentFirstName = req.body.StudentFirstName;
